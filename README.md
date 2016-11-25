@@ -6,6 +6,19 @@ About a month ago, I wrote a boilerplate MEAN project so I wouldn't have to wast
 
 You can find my boilerplate here: https://github.com/yeager-j/mean-starter
 
+## Images
+
+Todo List
+![Home Page](http://i.imgur.com/iIYGiRn.png)
+
+Single Todo
+![View Todo](http://i.imgur.com/MQY6Pib.png)
+
+Edit Todo
+![Edit Todo](http://i.imgur.com/jNDakPt.png)
+
+Delete Todo
+![Delete Todo](http://i.imgur.com/Ln7i1Qy.png)
 
 
 ## Installation
