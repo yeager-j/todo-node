@@ -7,12 +7,12 @@
             <a href="#/">Todo App</a>
         </h2>
         <span flex></span>
-        <md-button ng-class="{'hide-xl': !vm.isLoggedIn, 'hide-lg': !vm.isLoggedIn, 'hide-md': !vm.isLoggedIn}" ng-href="#/profile/{{vm.user.username}}">
+        <md-button ng-show="vm.isLoggedIn" ng-href="#/profile/{{vm.user.username}}">
             Profile
         </md-button>
         <md-button aria-label="Log out" ng-click="vm.logout()" ng-show="vm.isLoggedIn">Log out</md-button>
-        <md-button class="hide-xs hide-sm" aria-label="Log In" ng-href="#/login" ng-hide="vm.isLoggedIn">Log In</md-button>
-        <md-button class="hide-xs hide-sm" aria-label="Register" ng-href="#/register" ng-hide="vm.isLoggedIn">Register
+        <md-button aria-label="Log In" ng-href="#/login" ng-hide="vm.isLoggedIn">Log In</md-button>
+        <md-button aria-label="Register" ng-href="#/register" ng-hide="vm.isLoggedIn">Register
         </md-button>
     </div>
 </md-toolbar>
