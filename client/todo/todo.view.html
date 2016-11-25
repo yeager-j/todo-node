@@ -1,0 +1,18 @@
+<div layout="row" layout-align="center center">
+    <div flex="50" flex-sm="70" flex-xs="90">
+        <md-card theme="default">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">{{vm.todo.title}}</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>{{vm.todo.description}}</p>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="start">
+                <md-button class="md-accent" ng-click="vm.edit()">Edit</md-button>
+                <md-button class="md-warn" ng-click="vm.delete()">Delete</md-button>
+            </md-card-actions>
+        </md-card>
+    </div>
+</div>

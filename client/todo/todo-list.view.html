@@ -1,0 +1,25 @@
+<h2 class="text-center">Todo Notes</h2>
+
+<div layout="row" layout-align="center center">
+    <div flex="50" flex-sm="70" flex-xs="90">
+        <md-card theme="default" ng-repeat="card in vm.cards">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">{{card.title}}</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>{{card.description}}</p>
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="start">
+                <md-button class="md-primary" ng-href="#/todo/{{card._id}}">View</md-button>
+            </md-card-actions>
+        </md-card>
+    </div>
+</div>
+
+<div class="text-center">
+    <md-button class="md-fab md-mini" ng-click="vm.new()">
+        <md-icon class="material-icons">add</md-icon>
+    </md-button>
+</div>

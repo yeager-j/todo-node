@@ -1,0 +1,38 @@
+<md-toolbar class="md-hue-2">
+    <div class="md-toolbar-tools md-whiteframe-4dp">
+        <md-button class="md-icon-button" aria-label="Navigation">
+            <md-icon class="material-icons" ng-click="vm.toggleSidenav()">menu</md-icon>
+        </md-button>
+        <h2>
+            <a href="#/">Todo App</a>
+        </h2>
+        <span flex></span>
+        <md-button ng-class="{'hide-xl': !vm.isLoggedIn, 'hide-lg': !vm.isLoggedIn, 'hide-md': !vm.isLoggedIn}" ng-href="#/profile/{{vm.user.username}}">
+            Profile
+        </md-button>
+        <md-button aria-label="Log out" ng-click="vm.logout()" ng-show="vm.isLoggedIn">Log out</md-button>
+        <md-button class="hide-xs hide-sm" aria-label="Log In" ng-href="#/login" ng-hide="vm.isLoggedIn">Log In</md-button>
+        <md-button class="hide-xs hide-sm" aria-label="Register" ng-href="#/register" ng-hide="vm.isLoggedIn">Register
+        </md-button>
+    </div>
+</md-toolbar>
+
+<md-sidenav
+        class="md-sidenav-left"
+        md-whiteframe="4"
+        md-component-id="navigation">
+
+    <md-toolbar>
+        <h1 class="md-toolbar-tools">Navigation</h1>
+    </md-toolbar>
+    <md-content>
+        <md-list flex>
+            <md-list-item class="md-2-line" ng-repeat="item in vm.nav" ng-href="{{item.path}}" ng-click="vm.toggleSidenav()">
+                <md-icon class="material-icons">{{item.icon}}</md-icon>
+                <div class="md-list-item-text" layout="column">
+                    <h3>{{ item.location }}</h3>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-sidenav>
