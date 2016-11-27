@@ -20,6 +20,10 @@ Edit Todo
 Delete Todo
 ![Delete Todo](http://i.imgur.com/Ln7i1Qy.png)
 
+Mobile View
+
+![Mobile View](http://i.imgur.com/DLTH1Cr.png)
+
 
 ## Installation
 If you'd like to spin up your own server, follow these instructions:

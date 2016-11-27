@@ -1,7 +1,7 @@
 <h2 class="text-center">Todo Notes</h2>
 
 <div layout="row" layout-align="center center">
-    <div flex="50" flex-sm="70" flex-xs="90">
+    <div flex="50" flex-xs="100">
         <md-card theme="default" ng-repeat="card in vm.cards">
             <md-card-title>
                 <md-card-title-text>
@@ -18,8 +18,9 @@
     </div>
 </div>
 
-<div class="text-center">
-    <md-button class="md-fab md-mini" ng-click="vm.new()">
-        <md-icon class="material-icons">add</md-icon>
-    </md-button>
-</div>
+<md-button class="md-fab floating-action" ng-click="vm.new()">
+    <md-tooltip md-direction="top">
+        New Item
+    </md-tooltip>
+    <md-icon class="material-icons">add</md-icon>
+</md-button>

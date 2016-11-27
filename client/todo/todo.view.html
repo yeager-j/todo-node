@@ -1,5 +1,5 @@
 <div layout="row" layout-align="center center">
-    <div flex="50" flex-sm="70" flex-xs="90">
+    <div flex="50" flex-xs="100">
         <md-card theme="default">
             <md-card-title>
                 <md-card-title-text>
@@ -10,9 +10,11 @@
                 <p>{{vm.todo.description}}</p>
             </md-card-content>
             <md-card-actions layout="row" layout-align="start">
+                <md-button ng-href="#/todo" class="md-primary">Back</md-button>
                 <md-button class="md-accent" ng-click="vm.edit()">Edit</md-button>
                 <md-button class="md-warn" ng-click="vm.delete()">Delete</md-button>
             </md-card-actions>
         </md-card>
+
     </div>
 </div>
